@@ -4,6 +4,7 @@ public:
         int j = 1 ;
         //starting from the 1st index as the element on the 0th is correct 
         // j indicates the position to insert next element. Now we find the element just greater than it's previous elemnts as it is sorted we can do this. Or else you can compare with element at j-1.
+       //as this is sorted array whenever you'll get nums[i]>nums[i-1] that nums[i] is you next element.
         for(int i = 1 ;i<nums.size();i++){
                 
                 if(nums[i]>nums[i-1]){
