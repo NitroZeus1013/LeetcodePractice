@@ -18,7 +18,14 @@ public:
         if(head->val == val)return temp;
         head->next = temp;
         return head;
-        
+ /*
+  * In while loop we are checking like we're standing on a node and cheking if the next node has value == val . 
+  * If the value == val we bypass that node and we don't move ahead because if the next node after bypassing has the value == val then we've bypass that node also
+  * if the value != val then we move ahead.
+  * And as we've never checked for head's value at last we do that check
+  *
+  *
+  */       
 //         ListNode* newHead = head;
 //         if(!head)return head;
 //         while(head->next!=nullptr){
