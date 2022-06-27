@@ -52,3 +52,39 @@ public:
         
     }
 };
+/*
+ class Solution {
+public:
+    bool isInside(int r ,int c,int n,int m){
+        return r>=0 and r<n and c>=0 and c<m;
+    }
+    void dfs(int row ,int col,vector<vector<char>>&grid,int n ,int m){
+        grid[row][col] = '2';//marking as visited
+        
+        vector<pair<int,int>>directions = {{-1,0},{0,1},{1,0},{0,-1}};
+        for(pair<int,int>dir:directions){
+            int r = row+dir.first;
+            int c = col+dir.second;
+            if(isInside(r,c,n,m) and grid[r][c]=='1'){
+                dfs(r,c,grid,n,m);
+            }
+        }
+        
+    }
+    int numIslands(vector<vector<char>>& grid) {
+        int n = grid.size();
+        int m = grid[0].size();
+        int count = 0;
+        for(int i = 0 ;i<n;i++){
+            for(int j= 0;j<m;j++){
+                if(grid[i][j] == '1'){
+                    count++;
+                    dfs(i,j,grid,n,m);
+                }
+            }
+        }
+        
+        return count;
+    }
+};
+ */
