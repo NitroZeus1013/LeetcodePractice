@@ -1,1 +1,8 @@
-
+legend : 
+ BT = Binary Tree , BST = Binary Search Tree
+ 
+1. Boundary Traversal of BT 
+2. Vertical Traversal of BT
+3. Top view of BT
+4. Bottom View of BT
+5. Lowest common Ancestor (MLE)
